@@ -30,6 +30,8 @@ function MakeAnimal() {
         '( 0 )"""\\' +
         '|"^"`    |' +
         "||_/=\\\\__|`);";
+
+    append;
 }
 
 console.log("5번");
