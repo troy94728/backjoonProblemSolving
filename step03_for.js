@@ -73,25 +73,23 @@
 //         console.log(star);
 //     }
 // }
-// console.log(printStar(2));
+// console.log(printStar(5));
 // console.log("");
 
-// console.log("10번");
-// 별 찍기 2
+console.log("for문//2439//10번");
+//별 찍기 2
 function printStarReverse(a) {
     var star = "";
     var space = "";
-    for (var i = 0; i < a; i++) {
-        for (var j = 0; j < a - i - 1; j++) {
+    for (var i = 1; i <= a; i++) {
+        star += "*";
+        for (var j = 0; j < a - i; j++) {
             space += " ";
         }
-
-        for (var k = 0; k <= i; k++) {
-            star += "*";
-        }
+        console.log(space + star);
+        space = "";
     }
 }
-
 console.log(printStarReverse(5));
 // console.log("");
 
